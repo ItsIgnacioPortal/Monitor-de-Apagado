@@ -2,10 +2,9 @@
 	<Profile sr="prof115" ve="2">
 		<cdate>1670538495060</cdate>
 		<clp>true</clp>
-		<edate>1670561399158</edate>
+		<edate>1670563732935</edate>
 		<flags>8</flags>
 		<id>115</id>
-		<limit>true</limit>
 		<mid0>114</mid0>
 		<nme>AA_Cargando</nme>
 		<State sr="con0" ve="2">
@@ -16,7 +15,7 @@
 	<Profile sr="prof130" ve="2">
 		<cdate>1670559784223</cdate>
 		<clp>true</clp>
-		<edate>1670561403007</edate>
+		<edate>1670563183026</edate>
 		<flags>8</flags>
 		<id>130</id>
 		<limit>true</limit>
@@ -30,10 +29,9 @@
 	<Profile sr="prof48" ve="2">
 		<cdate>1670521909482</cdate>
 		<clp>true</clp>
-		<edate>1670561399380</edate>
+		<edate>1670563731751</edate>
 		<flags>8</flags>
 		<id>48</id>
-		<limit>true</limit>
 		<mid0>51</mid0>
 		<nme>AA_Apagado</nme>
 		<Event sr="con0" ve="2">
@@ -54,10 +52,9 @@
 	<Profile sr="prof84" ve="2">
 		<cdate>1670529478897</cdate>
 		<clp>true</clp>
-		<edate>1670561400912</edate>
+		<edate>1670563732457</edate>
 		<flags>8</flags>
 		<id>84</id>
-		<limit>true</limit>
 		<mid0>85</mid0>
 		<nme>Intent-based battery temp monitor</nme>
 		<Event sr="con0" ve="2">
@@ -68,14 +65,17 @@
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 		</Event>
+		<State sr="con1" ve="2">
+			<code>10</code>
+			<Int sr="arg0" val="0"/>
+		</State>
 	</Profile>
 	<Profile sr="prof87" ve="2">
 		<cdate>1670531391766</cdate>
 		<clp>true</clp>
-		<edate>1670561399604</edate>
+		<edate>1670563732161</edate>
 		<flags>8</flags>
 		<id>87</id>
-		<limit>true</limit>
 		<mid0>91</mid0>
 		<nme>AA_Arranque</nme>
 		<Event sr="con0" ve="2">
@@ -86,14 +86,14 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1670521892044</cdate>
 		<name>Monitor de Apagado</name>
-		<pids>48,130,87,84,115</pids>
-		<tids>86,114,132,116,91,51,85</tids>
+		<pids>130,48,84,115,87</pids>
+		<tids>86,116,85,91,132,51,114</tids>
 		<Kid sr="Kid">
 			<launchID>86</launchID>
 			<pkg>com.itsignacioportal.monitordeapagado</pkg>
 			<vTarg>29</vTarg>
-			<vnme>1.1</vnme>
-			<vnum>8</vnum>
+			<vnme>1.2</vnme>
+			<vnum>11</vnum>
 		</Kid>
 		<Img sr="icon" ve="2">
 			<nme>mw_action_bug_report</nme>
@@ -439,7 +439,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 	</Task>
 	<Task sr="task86">
 		<cdate>1670530218636</cdate>
-		<edate>1670561276820</edate>
+		<edate>1670563628680</edate>
 		<id>86</id>
 		<nme>AA_ES_Inicio de la app</nme>
 		<pri>100</pri>
@@ -487,6 +487,41 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<code>38</code>
 		</Action>
 		<Action sr="act15" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">AA_Apagado</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">AA_Arranque</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">AA_Cargando</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Intent-based battery temp monitor</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%AA_Arranque</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>409</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Monitor-de-Apagado</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act20" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -496,7 +531,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act16" ve="7">
+		<Action sr="act21" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">Monitor de Apagado esta activado.</Str>
 			<Int sr="arg1" val="1"/>
@@ -514,47 +549,12 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Str sr="arg8" ve="3"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act17" ve="7">
+		<Action sr="act22" ve="7">
 			<code>61</code>
 			<Int sr="arg0" val="200"/>
 		</Action>
-		<Action sr="act18" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act19" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">AA_Apagado</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>409</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Monitor-de-Apagado</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-		</Action>
-		<Action sr="act20" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">AA_Arranque</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act21" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">AA_Cargando</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
-		<Action sr="act22" ve="7">
-			<code>159</code>
-			<Str sr="arg0" ve="3">Intent-based battery temp monitor</Str>
-			<Int sr="arg1" val="1"/>
-		</Action>
 		<Action sr="act23" ve="7">
-			<code>549</code>
-			<Str sr="arg0" ve="3">%AA_Arranque</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
+			<code>38</code>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>37</code>
@@ -593,9 +593,10 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 		<Action sr="act7" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">Monitor de Apagado: Activo</Str>
-			<Str sr="arg1" ve="3">Monitor de Apagado esta activo.</Str>
+			<Str sr="arg1" ve="3">Monitor de Apagado esta activo.
+Registro guardado en "Monitor-de-Apagado/registro.txt"</Str>
 			<Str sr="arg10" ve="3"/>
-			<Str sr="arg11" ve="3">App activada</Str>
+			<Str sr="arg11" ve="3">Desactiva las otras categorias de notificaciones excepto esta</Str>
 			<Img sr="arg2" ve="2">
 				<nme>mw_action_bug_report</nme>
 			</Img>
@@ -623,6 +624,14 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 					<Str sr="arg7" ve="3"/>
 					<Int sr="arg8" val="0"/>
 					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+			<ListElementItem sr="item1">
+				<label>Abrir Registro</label>
+				<Action sr="action" ve="7">
+					<code>102</code>
+					<Str sr="arg0" ve="3">Monitor-de-Apagado/registro.txt</Str>
+					<Str sr="arg1" ve="3">text/plain</Str>
 				</Action>
 			</ListElementItem>
 		</Action>
