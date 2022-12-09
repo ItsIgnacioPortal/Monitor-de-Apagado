@@ -21,10 +21,10 @@ When the app is opened it will ask you if you want to enable an alert for when t
 Some things to keep in mind: This app has a couple of unnecessary notifications. You can hold the notification to open notification settings and disable the unnecessary categories. Just disable the "System notifications" category for this app.
 
 
-Also, Google Play Protect may complain about this app, since I made it in a whim and it's not actually on any app store. You can safely dismiss this warning. If you're skeptical, here is the VirusTotal scan of the dssnglish apps, and the tasker project source code is available on this GitHub repo.
+Also, Google Play Protect may complain about this app, since I made it in a whim and it's not actually on any app store. You can safely dismiss this warning. If you're skeptical, here is the VirusTotal scan of the [spanish](https://www.virustotal.com/gui/file/1fe25e5f0462207028422ea08f4d21ec4c4749609515578beb598657edc4d3c7?nocache=1) and [english](https://www.virustotal.com/gui/file/28e5fc641ff5f9a19df65d301f3a3909bd23480efd70babc6032629ce985ed79/details) apps, and the tasker project source code is available on this GitHub repo.
 
-# Compilar
-Esta app fue echa desde tasker.
+# Compile
+This app was made with tasker.
 
 - `Monitor_de_Apagado.prj.xml` Archivo del proyecto en Español
-- `Shutdown_Monitor.prj.xml` Archivo del proyecto en Ingles
+- `Shutdown_Monitor.prj.xml` Project file in English
