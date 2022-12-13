@@ -2,9 +2,10 @@
 	<Profile sr="prof111" ve="2">
 		<cdate>1670534839301</cdate>
 		<clp>true</clp>
-		<edate>1670563743132</edate>
+		<edate>1670909307381</edate>
 		<flags>8</flags>
 		<id>111</id>
+		<limit>true</limit>
 		<mid0>107</mid0>
 		<nme>Intent-based battery temp monitor</nme>
 		<Event sr="con0" ve="2">
@@ -23,9 +24,10 @@
 	<Profile sr="prof112" ve="2">
 		<cdate>1670534839308</cdate>
 		<clp>true</clp>
-		<edate>1670563742854</edate>
+		<edate>1670909306008</edate>
 		<flags>8</flags>
 		<id>112</id>
+		<limit>true</limit>
 		<mid0>110</mid0>
 		<nme>AA_Arranque</nme>
 		<Event sr="con0" ve="2">
@@ -36,9 +38,10 @@
 	<Profile sr="prof113" ve="2">
 		<cdate>1670534839316</cdate>
 		<clp>true</clp>
-		<edate>1670563742527</edate>
+		<edate>1670909305730</edate>
 		<flags>8</flags>
 		<id>113</id>
+		<limit>true</limit>
 		<mid0>101</mid0>
 		<nme>AA_Apagado</nme>
 		<Event sr="con0" ve="2">
@@ -49,9 +52,10 @@
 	<Profile sr="prof130" ve="2">
 		<cdate>1670559784223</cdate>
 		<clp>true</clp>
-		<edate>1670563742233</edate>
+		<edate>1670909305442</edate>
 		<flags>8</flags>
 		<id>130</id>
+		<limit>true</limit>
 		<mid0>116</mid0>
 		<nme>AA_Cargando</nme>
 		<State sr="con0" ve="2">
@@ -62,7 +66,7 @@
 	<Profile sr="prof48" ve="2">
 		<cdate>1670521909482</cdate>
 		<clp>true</clp>
-		<edate>1670563739669</edate>
+		<edate>1670908599453</edate>
 		<flags>8</flags>
 		<id>48</id>
 		<limit>true</limit>
@@ -86,7 +90,7 @@
 	<Profile sr="prof84" ve="2">
 		<cdate>1670529478897</cdate>
 		<clp>true</clp>
-		<edate>1670563740310</edate>
+		<edate>1670908600199</edate>
 		<flags>8</flags>
 		<id>84</id>
 		<limit>true</limit>
@@ -108,7 +112,7 @@
 	<Profile sr="prof87" ve="2">
 		<cdate>1670531391766</cdate>
 		<clp>true</clp>
-		<edate>1670563740042</edate>
+		<edate>1670908599870</edate>
 		<flags>8</flags>
 		<id>87</id>
 		<limit>true</limit>
@@ -122,14 +126,14 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1670521892044</cdate>
 		<name>Shutdown Monitor</name>
-		<pids>130,84,113,48,87,111,112</pids>
-		<tids>131,116,85,91,86,132,51,107,109,101,110</tids>
+		<pids>112,130,84,87,113,48,111</pids>
+		<tids>116,91,132,51,131,109,107,110,86,85,101</tids>
 		<Kid sr="Kid">
 			<launchID>109</launchID>
 			<pkg>com.itsignacioportal.shutdownmonitor</pkg>
 			<vTarg>29</vTarg>
-			<vnme>1.2</vnme>
-			<vnum>9</vnum>
+			<vnme>1.3</vnme>
+			<vnum>10</vnum>
 		</Kid>
 		<Img sr="icon" ve="2">
 			<nme>mw_action_bug_report</nme>
@@ -350,21 +354,76 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 	</Task>
 	<Task sr="task109">
 		<cdate>1670530218636</cdate>
-		<edate>1670563641154</edate>
+		<edate>1670908638743</edate>
 		<id>109</id>
 		<nme>AA_EN_Inicio de la app</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>918403287</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Manual Apps: com.itsignacioportal.shutdownmonitor
+Group Name: System
+Importance Or Disable: None (Disabled)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ancategory_description()
+Category Description
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ancategory_group_id()
+Category Group ID
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ancategory_group_name()
+Category Group Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ancategory_id()
+Category ID
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%ancategory_importance()
+Category Importance
+Importance from 0 to 5&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%ancategory_name()
+Category Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"channelsDelete":{"channelsDelete":false},"channelsFilter":{"channelGroupName":"System","channelName":"","settingsNotificationApps":"","settingsNotificationAppsManual":"com.itsignacioportal.shutdownmonitor"},"channelsModify":{"modifyImportance":"0"},"generatedValues":{}}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>1a60ea18-b2c0-42dd-8356-bd3774f22ca0</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autonotification.intent.IntentChannels</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autonotification</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autonotification.activity.ActivityConfigChannels</Str>
+			<Int sr="arg3" val="60"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>319</code>
 			<Str sr="arg0" ve="3">android.permission.WRITE_EXTERNAL_STORAGE</Str>
 			<Str sr="arg1" ve="3"/>
 		</Action>
-		<Action sr="act1" ve="7">
-			<code>319</code>
-			<Str sr="arg0" ve="3">android.permission.READ_EXTERNAL_STORAGE</Str>
-			<Str sr="arg1" ve="3"/>
-		</Action>
 		<Action sr="act10" ve="7">
+			<code>390</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">YesOrNo</Str>
+			<Str sr="arg2" ve="3">Enable shutdown alarm?</Str>
+			<Str sr="arg3" ve="3">Do you wish for the app to make a *beep* sound when the smartphone is about to shutdown?</Str>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act11" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -374,7 +433,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act11" ve="7">
+		<Action sr="act12" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%AA_Alarma</Str>
 			<Str sr="arg1" ve="3">1</Str>
@@ -384,55 +443,52 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act13" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act13" ve="7">
+		<Action sr="act14" ve="7">
 			<code>549</code>
 			<Str sr="arg0" ve="3">%AA_Alarma</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act14" ve="7">
+		<Action sr="act15" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act15" ve="7">
+		<Action sr="act16" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">AA_Apagado</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act16" ve="7">
+		<Action sr="act17" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">AA_Arranque</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act17" ve="7">
+		<Action sr="act18" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">AA_Cargando</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act18" ve="7">
+		<Action sr="act19" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">Intent-based battery temp monitor</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act19" ve="7">
+		<Action sr="act2" ve="7">
+			<code>319</code>
+			<Str sr="arg0" ve="3">android.permission.READ_EXTERNAL_STORAGE</Str>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act20" ve="7">
 			<code>549</code>
 			<Str sr="arg0" ve="3">%AA_Arranque</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
-			<code>409</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Shutdown-Monitor</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-		</Action>
-		<Action sr="act20" ve="7">
+		<Action sr="act21" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -442,7 +498,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act21" ve="7">
+		<Action sr="act22" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">Shutdown Monitor is active.</Str>
 			<Int sr="arg1" val="1"/>
@@ -460,14 +516,22 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Str sr="arg8" ve="3"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act22" ve="7">
+		<Action sr="act23" ve="7">
 			<code>61</code>
 			<Int sr="arg0" val="200"/>
 		</Action>
-		<Action sr="act23" ve="7">
+		<Action sr="act24" ve="7">
 			<code>38</code>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>409</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Shutdown-Monitor</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -477,7 +541,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">ERROR</Str>
 			<Str sr="arg1" ve="3">Shutdown-Monitor was unable to create a folder in the internal storage. Please grant the necessary permissions.</Str>
@@ -494,14 +558,14 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Int sr="arg8" val="0"/>
 			<Str sr="arg9" ve="3"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act6" ve="7">
 			<code>61</code>
 			<Int sr="arg0" val="200"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act7" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act8" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">Shutdown Monitor: Active</Str>
 			<Str sr="arg1" ve="3">Shutdown Monitor is Active.
@@ -546,23 +610,8 @@ The log is located at "Shutdown-Monitor/log.txt"</Str>
 				</Action>
 			</ListElementItem>
 		</Action>
-		<Action sr="act8" ve="7">
-			<code>38</code>
-		</Action>
 		<Action sr="act9" ve="7">
-			<code>390</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
-Input
-The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">YesOrNo</Str>
-			<Str sr="arg2" ve="3">Enable shutdown alarm?</Str>
-			<Str sr="arg3" ve="3">Do you wish for the app to make a *beep* sound when the smartphone is about to shutdown?</Str>
-			<Str sr="arg4" ve="3"/>
+			<code>38</code>
 		</Action>
 	</Task>
 	<Task sr="task110">
@@ -715,7 +764,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&
 	</Task>
 	<Task sr="task51">
 		<cdate>1670521921041</cdate>
-		<edate>1670557912253</edate>
+		<edate>1670564335547</edate>
 		<id>51</id>
 		<nme>AA_ES_Registrar evento</nme>
 		<pri>100</pri>
@@ -928,21 +977,76 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 	</Task>
 	<Task sr="task86">
 		<cdate>1670530218636</cdate>
-		<edate>1670563628680</edate>
+		<edate>1670908394229</edate>
 		<id>86</id>
 		<nme>AA_ES_Inicio de la app</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
+			<code>918403287</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.twofortyfouram.locale.intent.extra.BLURB>Manual Apps: com.itsignacioportal.monitordeapagado
+Group Name: System
+Importance Or Disable: None (Disabled)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS>parameters</net.dinglisch.android.tasker.JSON_ENCODED_KEYS>
+					<net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>java.lang.String</net.dinglisch.android.tasker.JSON_ENCODED_KEYS-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ancategory_description()
+Category Description
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ancategory_group_id()
+Category Group ID
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ancategory_group_name()
+Category Group Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ancategory_id()
+Category ID
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%ancategory_importance()
+Category Importance
+Importance from 0 to 5&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%ancategory_name()
+Category Name
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>parameters plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<parameters>{"channelsDelete":{"channelsDelete":false},"channelsFilter":{"channelGroupName":"System","channelName":"","settingsNotificationApps":"","settingsNotificationAppsManual":"com.itsignacioportal.monitordeapagado"},"channelsModify":{"modifyImportance":"0"},"generatedValues":{}}</parameters>
+					<parameters-type>java.lang.String</parameters-type>
+					<plugininstanceid>1a60ea18-b2c0-42dd-8356-bd3774f22ca0</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autonotification.intent.IntentChannels</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autonotification</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autonotification.activity.ActivityConfigChannels</Str>
+			<Int sr="arg3" val="60"/>
+			<Int sr="arg4" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>319</code>
 			<Str sr="arg0" ve="3">android.permission.WRITE_EXTERNAL_STORAGE</Str>
 			<Str sr="arg1" ve="3"/>
 		</Action>
-		<Action sr="act1" ve="7">
-			<code>319</code>
-			<Str sr="arg0" ve="3">android.permission.READ_EXTERNAL_STORAGE</Str>
-			<Str sr="arg1" ve="3"/>
-		</Action>
 		<Action sr="act10" ve="7">
+			<code>390</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">YesOrNo</Str>
+			<Str sr="arg2" ve="3">Activar alarma de apagado?</Str>
+			<Str sr="arg3" ve="3">Deseas que la app haga un sonido cuando el telefono este por apagarse?</Str>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act11" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -952,7 +1056,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act11" ve="7">
+		<Action sr="act12" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%AA_Alarma</Str>
 			<Str sr="arg1" ve="3">1</Str>
@@ -962,55 +1066,52 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act13" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act13" ve="7">
+		<Action sr="act14" ve="7">
 			<code>549</code>
 			<Str sr="arg0" ve="3">%AA_Alarma</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act14" ve="7">
+		<Action sr="act15" ve="7">
 			<code>38</code>
 		</Action>
-		<Action sr="act15" ve="7">
+		<Action sr="act16" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">AA_Apagado</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act16" ve="7">
+		<Action sr="act17" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">AA_Arranque</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act17" ve="7">
+		<Action sr="act18" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">AA_Cargando</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act18" ve="7">
+		<Action sr="act19" ve="7">
 			<code>159</code>
 			<Str sr="arg0" ve="3">Intent-based battery temp monitor</Str>
 			<Int sr="arg1" val="1"/>
 		</Action>
-		<Action sr="act19" ve="7">
+		<Action sr="act2" ve="7">
+			<code>319</code>
+			<Str sr="arg0" ve="3">android.permission.READ_EXTERNAL_STORAGE</Str>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act20" ve="7">
 			<code>549</code>
 			<Str sr="arg0" ve="3">%AA_Arranque</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act2" ve="7">
-			<code>409</code>
-			<se>false</se>
-			<Str sr="arg0" ve="3">Monitor-de-Apagado</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-		</Action>
-		<Action sr="act20" ve="7">
+		<Action sr="act21" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -1020,7 +1121,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act21" ve="7">
+		<Action sr="act22" ve="7">
 			<code>548</code>
 			<Str sr="arg0" ve="3">Monitor de Apagado esta activado.</Str>
 			<Int sr="arg1" val="1"/>
@@ -1038,14 +1139,22 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Str sr="arg8" ve="3"/>
 			<Int sr="arg9" val="1"/>
 		</Action>
-		<Action sr="act22" ve="7">
+		<Action sr="act23" ve="7">
 			<code>61</code>
 			<Int sr="arg0" val="200"/>
 		</Action>
-		<Action sr="act23" ve="7">
+		<Action sr="act24" ve="7">
 			<code>38</code>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>409</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">Monitor-de-Apagado</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
@@ -1055,7 +1164,7 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act5" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">ERROR</Str>
 			<Str sr="arg1" ve="3">Monitor de Apagado no pudo crear una carpeta en el almacenamiento interno. Porfavor otorgue los permisos necesarios.</Str>
@@ -1072,14 +1181,14 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&
 			<Int sr="arg8" val="0"/>
 			<Str sr="arg9" ve="3"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act6" ve="7">
 			<code>61</code>
 			<Int sr="arg0" val="200"/>
 		</Action>
-		<Action sr="act6" ve="7">
+		<Action sr="act7" ve="7">
 			<code>43</code>
 		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act8" ve="7">
 			<code>523</code>
 			<Str sr="arg0" ve="3">Monitor de Apagado: Activo</Str>
 			<Str sr="arg1" ve="3">Monitor de Apagado esta activo.
@@ -1124,23 +1233,8 @@ Registro guardado en "Monitor-de-Apagado/registro.txt"</Str>
 				</Action>
 			</ListElementItem>
 		</Action>
-		<Action sr="act8" ve="7">
-			<code>38</code>
-		</Action>
 		<Action sr="act9" ve="7">
-			<code>390</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
-Input
-The text that was retrieved from the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">YesOrNo</Str>
-			<Str sr="arg2" ve="3">Activar alarma de apagado?</Str>
-			<Str sr="arg3" ve="3">Deseas que la app haga un sonido cuando el telefono este por apagarse?</Str>
-			<Str sr="arg4" ve="3"/>
+			<code>38</code>
 		</Action>
 	</Task>
 	<Task sr="task91">
